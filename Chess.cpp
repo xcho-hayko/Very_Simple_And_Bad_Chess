@@ -409,7 +409,7 @@ bool Board::makeMove(int x1, int y1, int x2, int y2) {
 		std::cout << "One of your inputs was our of bounds" << std::endl;
 		return false;
 	}
-	Square* src = getSquare(x1, y1);
+	Square* src = getSquare(x1, y1);https://github.com/xcho-hayko/Very_Simple_And_Bad_Chess/blob/main/Chess.cpp
 	Square* dest = getSquare(x2, y2);
 
 	if (src->getColor() == dest->getColor() && dest->getColor() != NONE)
@@ -434,7 +434,7 @@ bool Board::makeMove(int x1, int y1, int x2, int y2) {
 		break;
 	case EMPTY: std::cout << "You do not have a piece there" << std::endl;  return false;
 		break;
-	default: std::cerr << "Something went wrong in the switch statement in makeMove()" << std::endl;
+	default: std::cerr << "Something went wrong in the switch statement" << std::endl;
 		break;
 	}
 	return false;
